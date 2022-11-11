@@ -1,0 +1,55 @@
+@import "reset.css";
+
+$small-font: 12px;
+$big-font: 35px;
+$large-font: 30px;
+$middle-font: 25px;
+$white-color: #ffffff;
+$black-color: #414141;
+// #A1A1A0
+body {
+  color: $black-color;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+header {
+  width: 100%;
+  height: 10vh;
+  background-color: $white-color;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0 10%;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  text-transform: uppercase;
+  ul {
+    display: flex;
+    font-size: $small-font;
+    li {
+      margin-right: 20px;
+    }
+  }
+}
+
+section {
+  padding: 0 10%;
+}
+
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  div {
+    border-right: 1px solid $black-color;
+    padding: 0 10%;
+    &:last-child {
+      border: none;
+    }
+  }
+}
