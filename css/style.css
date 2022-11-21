@@ -1,6 +1,8 @@
 @import "reset.css";
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap");
 body {
   color: #414141;
+  font-family: "Nanum Myeongjo", serif;
 }
 
 a {
@@ -258,6 +260,39 @@ section {
 .outside-box .outside-box__info button:hover {
   background-color: #414141;
   color: #ffffff;
+}
+
+.join {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.join span {
+  margin-bottom: 20px;
+}
+.join .join-title {
+  font-size: 30px;
+  width: 58%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.join form input {
+  position: relative;
+}
+.join form input:first-child {
+  border: none;
+  border-bottom: 1px solid #414141;
+  padding: 10px;
+  width: 500px;
+}
+.join form input:first-child::placeholder {
+  font-size: 30px;
+}
+.join form input:last-child {
+  background-color: #ffffff;
+  border: 1px solid #414141;
+  padding: 8px 15px;
+  font-size: x-large;
 }
 
 .follow-email {
